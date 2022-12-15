@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* ======================
+MAIN PAGES
+====================== */
+
+#first-page {
+  background-image: url(/images/bg_shadow.png), url(/images/img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  top: -70px;
+}
+
+#second-page {
+  background-image: url(/images/texture.png);
+  height: 760px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* =======================
+HEADER
+======================= */
+
+header {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(86, 83, 76, 0.6);
+}
+
+#logo {
+  padding: 18px 0 8px 20px;
+}
+
+header nav {
+  padding-left: 104px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+
+header nav :not(:last-child)::after {
+  content: "~";
+  padding-left: 30px;
+}
+
+header nav a {
+  font-family: "Alegreya", serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#social-links {
+  padding-left: 151px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 28px;
+}
+
+/* ==========================
+FIRST MAIN PAGE CONTENT
+========================== */
+
+#first-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 213px;
+}
+
+#first-page-content h1 {
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+  font-size: 92px;
+  text-shadow: 0 1px 0 #3d3029;
+  letter-spacing: 6.9px;
+}
+
+#first-page-content img {
+  padding-top: 56px;
+  box-shadow: 0 1px 0 #3d3029;
+}
+
+#first-page-content p {
+  padding-top: 71px;
+  padding-bottom: 69px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #3d3029;
+  width: 544px;
+  text-align: center;
+}
+
+#first-page-content button {
+  width: 200px;
+  height: 50px;
+  border: 1px dashed #9e9c93;
+  background-color: rgba(86, 83, 76, 0.5);
+  font-family: "Alegreya", serif;
+  font-size: 14px;
+  letter-spacing: 4.2px;
+  color: #ffffff;
+}
+
+/* ==========================
+SECOND MAIN PAGE CONTENT
+========================== */
+#white-section {
+  height: 20px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+#bread-circle {
+  position: absolute;
+  background: #ffffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+#bread-circle img {
+  transform: translate(50%, 50%);
+}
